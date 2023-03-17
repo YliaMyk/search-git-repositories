@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+* {
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.title {
+  font-size: 36px;
+  font-family: Open Sans;
+  color: rgb(201, 127, 243);
+}
+
+.main {
+  margin: 20vh auto;
+  width: 550px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  .search__input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .search__submit {
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    .search__icon {
+      height: 30px;
+    }
+  }
+}
+
+.repositories {
+  margin-top: 20px;
+  font-family: Open Sans;
+}
+
+.card {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 15px 0;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .card__name {
+    display:block;
+    width: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(82, 142, 231);
+  }
+  .card__description {
+    opacity: 80%;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .card__start {
+    display: flex;
+    opacity: 80%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .card__start:hover {
+    opacity: 100%;
+  }
+  .card__p {
+    text-overflow: clip;
+    opacity: 80%;
+    font-size: 14px;
+  }
+  .card__icon {
+    height: 15px;
+    margin-right: 5px;
+  }
+  .card_margin-right {
+    margin-right: 20px;
+  }
+}
